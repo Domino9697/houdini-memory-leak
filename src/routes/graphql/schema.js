@@ -112,7 +112,7 @@ const favorites = []
 export const resolvers = {
 	Query: {
 		species(_, { id }) {
-			return data.species[id - 1]
+			return data.species[1]
 		},
 		async pokemon(_, args) {
 			const { connectionFromArray } = await import('../../lib/connections.mjs')
